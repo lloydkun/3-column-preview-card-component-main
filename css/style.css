@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  color: #f2f2f2;
+  background: #f2f2f2;
+  height: calc(100vh - 1px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  width: 100%;
+  padding: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .inner-component {
+  width: 20rem;
+  padding: 3rem;
+}
+
+.container .inner-component h3 {
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+
+.container .inner-component button {
+  width: 10rem;
+  height: 3rem;
+  font-family: "Lexend Deca";
+  border-radius: 5rem;
+  border: none;
+  background: #f2f2f2;
+  margin-top: 0.5rem;
+}
+
+.container .inner-component button:active {
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  background: transparent;
+  color: #f2f2f2;
+}
+
+.container .inner-component button:hover {
+  cursor: pointer;
+}
+
+.container .sedans {
+  background: #e38826;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.container .sedans button {
+  color: #e38826;
+}
+
+.container .suvs {
+  background: #006970;
+}
+
+.container .suvs button {
+  color: #006970;
+}
+
+.container .luxury {
+  background: #004241;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.container .luxury button {
+  color: #004241;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .container .sedans {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  .container .luxury {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

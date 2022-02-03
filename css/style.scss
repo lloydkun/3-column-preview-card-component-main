@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+$clr-orange: hsl(31, 77%, 52%);
+$clr-cyan-500: hsl(184, 100%, 22%);
+$clr-cyan-700: hsl(179, 100%, 13%);
+$clr-white-200: hsla(0, 0%, 100%, 0.75);
+$clr-gray-200: hsl(0, 0%, 95%);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: "Lexend Deca", sans-serif;
+    color: $clr-gray-200;
+    background: $clr-gray-200;
+    height: calc(100vh - 1px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    padding: min(5rem, 10rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .inner-component {
+        width: max(20rem, 5rem);
+        padding: min(3rem, 3rem);
+        h3 {
+            color: $clr-gray-200;
+            font-family: "Big Shoulders Display", sans-serif;
+            font-size: 2.5rem;
+            margin: 2rem 0;
+        }
+        button {
+            width: min(10rem, 15rem);
+            height: 3rem;
+            font-family: "Lexend Deca";
+            border-radius: 5rem;
+            border: none;
+            background: $clr-gray-200;
+            margin-top: 0.5rem;
+            &:active {
+                border: 2px solid $clr-white-200;
+                background: transparent;
+                color: $clr-gray-200;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .sedans {
+        background: $clr-orange;
+        border-radius: 0.5rem 0.5rem 0 0;
+        button {
+            color: $clr-orange;
+        }
+    }
+    .suvs {
+        background: $clr-cyan-500;
+        button {
+            color: $clr-cyan-500;
+        }
+    }
+    .luxury {
+        background: $clr-cyan-700;
+        border-radius: 0 0 0.5rem 0.5rem;
+
+        button {
+            color: $clr-cyan-700;
+        }
+    }
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        flex-direction: row;
+        .sedans {
+            border-radius: 0.5rem 0 0 0.5rem;
+        }
+        .luxury {
+            border-radius: 0 0.5rem 0.5rem 0;
+        }
+    }
+}
